@@ -52,7 +52,7 @@
 		
 			 $(function() {
 			 $( "button" ).on("click" , function() {
-					self.location = "/product/updateProduct?prodNo=${product.prodNo}"
+				 window.location.href = "/product/listProduct?menu=${search}";
 				});
 		});
 		
@@ -119,7 +119,7 @@ div class="page-header">
 
 		<div class="row">
 	  		<div class="col-md-12 text-center ">
-	  			<button type="button" class="btn btn-primary">상품정보수정</button>
+	  			<button type="button" class="btn btn-primary">확인</button>
 	  		</div>
 		</div>
 		

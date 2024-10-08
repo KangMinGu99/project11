@@ -32,7 +32,7 @@
 	
 		$(function() { // √Îº“ Event
 			$("a[href='#' ]").on("click" , function() {
-				$("form")[0].reset();
+				history.go(-1);
 			});
 		});	
 	

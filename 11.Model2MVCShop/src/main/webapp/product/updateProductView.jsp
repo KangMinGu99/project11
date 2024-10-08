@@ -41,7 +41,7 @@
 	
     $(function() {// 취소 Event
 		$("a[href='#' ]").on("click" , function() {
-			$("form")[0].reset();
+			history.go(-1);
 		});
 	});	
 
@@ -95,7 +95,9 @@ function fncUpdateProduct() {
 	    </div>
 
 <form class="form-horizontal">
-
+	<input type="hidden" class="form-control" id="prodNo" name="prodNo" value="${product.prodNo}" >
+	
+	
   <div class="form-group">
 		    <label for="userName" class="col-sm-offset-1 col-sm-3 control-label">상품명</label>
 		    <div class="col-sm-4">
@@ -127,7 +129,7 @@ function fncUpdateProduct() {
 		    <div class="form-group">
 		    <label for="userName" class="col-sm-offset-1 col-sm-3 control-label">상품이미지</label>
 		    <div class="col-sm-4">
-		      <input type="image" class="form-control" id="fileName" name="fileName" value="${product.fileName}" placeholder="변경상품이미지">
+		      <input type="text" class="form-control" id="fileName" name="fileName" value="${product.fileName}" placeholder="변경상품이미지">
 		    </div>
 		  </div>
 

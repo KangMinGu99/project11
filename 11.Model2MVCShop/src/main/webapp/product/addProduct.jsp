@@ -27,13 +27,13 @@
         }
     </style>
 	
-	<script type="text/javascript">m/jquery-2.1.4.min.js"></script>
+	
 	<script type="text/javascript">
 	
 	
 	$(function(){ //확인 Event
 		$( "button.btn.btn-primary" ).on("click" , function() {
-			self.location ="/product/listProduct?=product=${product.prodName}"
+			window.location.href = "/product/listProduct?menu=${manage}";
 		});
 	});
 	
@@ -75,9 +75,9 @@
 		  </div>
 
 			  <div class="form-group">
-		    <label for="userName" class="col-sm-offset-1 col-sm-3 control-label">~~~제조일자 날짜 나오게~~~</label>
+		    <label for="userName" class="col-sm-offset-1 col-sm-3 control-label">제조일자</label>
 		    <div class="col-sm-4">
-		      <input type="date" class="form-control" id="manuDate" name="manuDate" placeholder="날짜나오게구현">${manuDate}
+		      <input type="text" class="form-control" id="manuDate" name="manuDate" placeholder="${product.manuDate}">
 		    </div>
 		  </div>
 
@@ -90,7 +90,7 @@
 
 
 		  <div class="form-group">
-		    <label for="userName" class="col-sm-offset-1 col-sm-3 control-label"></label>
+		    <label for="userName" class="col-sm-offset-1 col-sm-3 control-label">상품이미지</label>
 		    <div class="col-sm-4">
 		      <input type="text" class="form-control" id="fileName" name="fileName" placeholder="${product.fileName}">
 		    </div>
