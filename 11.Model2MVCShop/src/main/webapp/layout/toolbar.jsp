@@ -137,6 +137,10 @@
 			$(self.location).attr("href","/product/listProduct?menu=search");
 		});
 		
+// 		$( "a:contains('최근본상품')" ).on("click" , function() {
+// 			$(self.location).attr(href="/history.jsp");
+// 		});
+		
 		
 
 		
